@@ -4,7 +4,7 @@ import { doc, getDoc, setDoc } from "firebase/firestore";
 
 function Profile() {
   const user = auth.currentUser;
-  const [profile, setProfile] = useState(null);
+  const [, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [editing, setEditing] = useState(false);
   const [form, setForm] = useState({ name: "nickname", age: 0, height: 0, weight: 0, sex: "gender", goal: ""
